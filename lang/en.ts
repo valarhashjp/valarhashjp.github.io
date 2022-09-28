@@ -1,0 +1,30 @@
+const en = {
+  Home: "Home",
+  CompanyProfile: "Company Profile",
+  MiningResources: "Mining Resources",
+  NodeService: "Node Service",
+  ContactUs: "Contact Us",
+  Valarhash: "Valarhash, ",
+  inHashwetrust: "in Hash we trust.",
+  moreAboutus: "More about us",
+  moreAboutusContent:
+    "9 years of experience in the bitcoin mining industry since the year of 2013. Generating the profit with more green power.",
+  meetusbetter: "Meet us better",
+  ourHistoryinNumbers: "Our History in Numbers",
+  tips1: "contributing to bitcoin mining for years",
+  tips2: "Petahash we operated",
+  tips3: "data centers built",
+  tips4: "satisfied customers",
+  weAre: "We Are",
+  who: "Who ",
+  selfIntroductionContent1:"It is an innovative ecological platform focusing on the blockchain industry.",
+  selfIntroductionContent2:"From a global perspective, Valarhash established itself as the industry leader in the ASIC mining market. Also, we integrate cutting-edge resources by connecting the physical and digital worlds with blockchain.",
+  selfIntroductionContent3:"Valarhash focuses on looking for the resource advantages of the United States, Canada, Sweden, Southeast Asia, and other regions.",
+  ourProducts:"Our Products",
+  iconText1:"ASIC miner hosting services.",
+  iconText2:"Mining pool technology support.",
+  iconText3:"Reliable ASIC miners provider.",
+  iconText4:"Mining data center construction remote and on-site support.",
+  productName:"Bitcoin Miner S19 Hydro"
+};
+export default en;
