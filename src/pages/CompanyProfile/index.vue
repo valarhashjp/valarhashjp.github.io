@@ -7,7 +7,7 @@ const { t } = useI18n();
   <main>
     <img
       class="img"
-      src="../../../public/image/img_CompanyProfile.png"
+      src="/image/img_CompanyProfile.png"
       alt=""
     />
     <div class="companyProfile flex">

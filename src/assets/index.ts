@@ -12,15 +12,15 @@ export const store = createStore<Store>({
           resourcesList: [
             {
               name: "Bitcoin Miner S19",
-              productImage: "../../public/image/bitmain/bitmain-main.png",
+              productImage: "/image/bitmain/bitmain-main.png",
               hashrate: "126T ± 5%",
               powerRatio: "36/34 ± 5%",
               powerOnWall: "3250 ± 5%",
               showPictures: [
-                "../../public/image/bitmain/bitmain-main.png",
-                "../../public/image/bitmain/bitmain-img1.webp",
-                "../../public/image/bitmain/bitmain-img2.png",
-                "../../public/image/bitmain/bitmain-img2.png",
+                "/image/bitmain/bitmain-main.png",
+                "/image/bitmain/bitmain-img1.webp",
+                "/image/bitmain/bitmain-img2.png",
+                "/image/bitmain/bitmain-img2.png",
               ],
               tableInfo: {
                 algorithm: "SHA256",
@@ -31,15 +31,15 @@ export const store = createStore<Store>({
             },
             {
               name: "Bitcoin Miner S19 Pro",
-              productImage: "../../public/image/bitmain/bitmain-main.png",
+              productImage: "/image/bitmain/bitmain-main.png",
               hashrate: "110T±3%",
               powerRatio: "29.5 ± 5%",
               powerOnWall: "3250 ± 5%",
               showPictures: [
-                "../../public/image/bitmain/bitmain-main.png",
-                "../../public/image/bitmain/bitmain-img1.webp",
-                "../../public/image/bitmain/bitmain-img2.png",
-                "../../public/image/bitmain/bitmain-img2.png",
+                "/image/bitmain/bitmain-main.png",
+                "/image/bitmain/bitmain-img1.webp",
+                "/image/bitmain/bitmain-img2.png",
+                "/image/bitmain/bitmain-img2.png",
               ],
               tableInfo: {
                 algorithm: "SHA256",
@@ -50,15 +50,15 @@ export const store = createStore<Store>({
             },
             {
               name: "Bitcoin Miner S19 Xp",
-              productImage: "../../public/image/bitmain/bitmain-main.png",
+              productImage: "/image/bitmain/bitmain-main.png",
               hashrate: "140T±5%",
               powerRatio: "21.5",
               powerOnWall: "3010± 5%",
               showPictures: [
-                "../../public/image/bitmain/bitmain-main.png",
-                "../../public/image/bitmain/bitmain-img1.webp",
-                "../../public/image/bitmain/bitmain-img2.png",
-                "../../public/image/bitmain/bitmain-img2.png",
+                "/image/bitmain/bitmain-main.png",
+                "/image/bitmain/bitmain-img1.webp",
+                "/image/bitmain/bitmain-img2.png",
+                "/image/bitmain/bitmain-img2.png",
               ],
               tableInfo: {
                 algorithm: "SHA256",
@@ -69,15 +69,15 @@ export const store = createStore<Store>({
             },
             {
               name: "Bitcoin Miner S19J Pro",
-              productImage: "../../public/image/bitmain/bitmain-main.png",
+              productImage: "/image/bitmain/bitmain-main.png",
               hashrate: "92/96/100/104 T±3%",
               powerRatio: "29.5 ± 5%",
               powerOnWall: "2714/2832/2950/3068 W± 5%",
               showPictures: [
-                "../../public/image/bitmain/bitmain-main.png",
-                "../../public/image/bitmain/bitmain-img1.webp",
-                "../../public/image/bitmain/bitmain-img2.png",
-                "../../public/image/bitmain/bitmain-img2.png",
+                "/image/bitmain/bitmain-main.png",
+                "/image/bitmain/bitmain-img1.webp",
+                "/image/bitmain/bitmain-img2.png",
+                "/image/bitmain/bitmain-img2.png",
               ],
               tableInfo: {
                 algorithm: "SHA256",
@@ -88,15 +88,15 @@ export const store = createStore<Store>({
             },
             {
               name: "Bitcoin Miner T19",
-              productImage: "../../public/image/bitmain/bitmain-main.png",
+              productImage: "/image/bitmain/bitmain-main.png",
               hashrate: "84/88 T±3%",
               powerRatio: "37.5±5%",
               powerOnWall: "3150/3300±5%",
               showPictures: [
-                "../../public/image/bitmain/bitmain-main.png",
-                "../../public/image/bitmain/bitmain-img1.webp",
-                "../../public/image/bitmain/bitmain-img2.png",
-                "../../public/image/bitmain/bitmain-img2.png",
+                "/image/bitmain/bitmain-main.png",
+                "/image/bitmain/bitmain-img1.webp",
+                "/image/bitmain/bitmain-img2.png",
+                "/image/bitmain/bitmain-img2.png",
               ],
               tableInfo: {
                 algorithm: "SHA256",
@@ -107,14 +107,14 @@ export const store = createStore<Store>({
             },
             {
               name: "ETHETC Miner E9",
-              productImage: "../../public/image/bitmain/ETHETC-main.jpg",
+              productImage: "/image/bitmain/ETHETC-main.jpg",
               hashrate: "2.4G",
               powerRatio: "0.8",
               powerOnWall: "1920w± 5%",
               showPictures: [
-                "../../public/image/bitmain/ETHETC-main.png",
-                "../../public/image/bitmain/ETHETC-1.jpg",
-                "../../public/image/bitmain/ETHETC-2.jpg",
+                "/image/bitmain/ETHETC-main.png",
+                "/image/bitmain/ETHETC-1.jpg",
+                "/image/bitmain/ETHETC-2.jpg",
               ],
               tableInfo: {
                 algorithm: "EtHash",
@@ -125,11 +125,11 @@ export const store = createStore<Store>({
             },
             {
               name: "KDA Miner KA3",
-              productImage: "../../public/image/bitmain/kad.png",
+              productImage: "/image/bitmain/kad.png",
               hashrate: "166T",
               powerRatio: "19± 5%",
               powerOnWall: "3154± 5%",
-              showPictures: ["../../public/image/bitmain/kad.png"],
+              showPictures: ["/image/bitmain/kad.png"],
               tableInfo: {
                 algorithm: "Kadena",
                 temperature: "5~40",
@@ -139,15 +139,15 @@ export const store = createStore<Store>({
             },
             {
               name: "Litecoin Miner L7",
-              productImage: "../../public/image/bitmain/bitmain-main.png",
+              productImage: "/image/bitmain/bitmain-main.png",
               hashrate: "8800/9050/9300/9500M±3%",
               powerRatio: "0.36 ± 10%",
               powerOnWall: "3170/3260/3350/3420 ± 10%",
               showPictures: [
-                "../../public/image/bitmain/bitmain-main.png",
-                "../../public/image/bitmain/bitmain-img1.webp",
-                "../../public/image/bitmain/bitmain-img2.png",
-                "../../public/image/bitmain/bitmain-img2.png",
+                "/image/bitmain/bitmain-main.png",
+                "/image/bitmain/bitmain-img1.webp",
+                "/image/bitmain/bitmain-img2.png",
+                "/image/bitmain/bitmain-img2.png",
               ],
               tableInfo: {
                 algorithm: "Scrypt",
@@ -158,15 +158,15 @@ export const store = createStore<Store>({
             },
             {
               name: "Zcash Miner Z15",
-              productImage: "../../public/image/bitmain/bitmain-main.png",
+              productImage: "/image/bitmain/bitmain-main.png",
               hashrate: "420K",
               powerRatio: "3.6±5%",
               powerOnWall: "1510±5%",
               showPictures: [
-                "../../public/image/bitmain/bitmain-main.png",
-                "../../public/image/bitmain/bitmain-img1.webp",
-                "../../public/image/bitmain/bitmain-img2.png",
-                "../../public/image/bitmain/bitmain-img2.png",
+                "/image/bitmain/bitmain-main.png",
+                "/image/bitmain/bitmain-img1.webp",
+                "/image/bitmain/bitmain-img2.png",
+                "/image/bitmain/bitmain-img2.png",
               ],
               tableInfo: {
                 algorithm: "EquiHash",
@@ -184,16 +184,16 @@ export const store = createStore<Store>({
             {
               name: "Bitcoin Miner M30S",
               productImage:
-                "../../public/image/whatsminer/Whatsminer-main.webp",
+                "/image/whatsminer/Whatsminer-main.webp",
               hashrate: "88/90/92 TH/S",
               powerRatio: "36J/T",
               powerOnWall: "3168/3240/3312 W（±10%）",
               showPictures: [
-                "../../public/image/whatsminer/Whatsminer-main.webp",
-                "../../public/image/whatsminer/Whatsminer-1.webp",
-                "../../public/image/whatsminer/Whatsminer-2.webp",
-                "../../public/image/whatsminer/Whatsminer-3.webp",
-                "../../public/image/whatsminer/Whatsminer-4.webp",
+                "/image/whatsminer/Whatsminer-main.webp",
+                "/image/whatsminer/Whatsminer-1.webp",
+                "/image/whatsminer/Whatsminer-2.webp",
+                "/image/whatsminer/Whatsminer-3.webp",
+                "/image/whatsminer/Whatsminer-4.webp",
               ],
               tableInfo: {
                 algorithm: "SHA256",
@@ -205,16 +205,16 @@ export const store = createStore<Store>({
             {
               name: "Bitcoin Miner M30S+",
               productImage:
-                "../../public/image/whatsminer/Whatsminer-main.webp",
+                "/image/whatsminer/Whatsminer-main.webp",
               hashrate: "98/100/102 TH/S±5%",
               powerRatio: "	32J/MH±5%",
               powerOnWall: "3136/3200/3264 W±10%",
               showPictures: [
-                "../../public/image/whatsminer/Whatsminer-main.webp",
-                "../../public/image/whatsminer/Whatsminer-1.webp",
-                "../../public/image/whatsminer/Whatsminer-2.webp",
-                "../../public/image/whatsminer/Whatsminer-3.webp",
-                "../../public/image/whatsminer/Whatsminer-4.webp",
+                "/image/whatsminer/Whatsminer-main.webp",
+                "/image/whatsminer/Whatsminer-1.webp",
+                "/image/whatsminer/Whatsminer-2.webp",
+                "/image/whatsminer/Whatsminer-3.webp",
+                "/image/whatsminer/Whatsminer-4.webp",
               ],
               tableInfo: {
                 algorithm: "SHA256",
@@ -226,16 +226,16 @@ export const store = createStore<Store>({
             {
               name: "Bitcoin Miner M30S++",
               productImage:
-                "../../public/image/whatsminer/Whatsminer-main.webp",
+                "/image/whatsminer/Whatsminer-main.webp",
               hashrate: "104/106/108/110/112 TH/S±5%",
               powerRatio: "	31J/MH±5%",
               powerOnWall: "3224/3286/3348/3410/3472 W±10%",
               showPictures: [
-                "../../public/image/whatsminer/Whatsminer-main.webp",
-                "../../public/image/whatsminer/Whatsminer-1.webp",
-                "../../public/image/whatsminer/Whatsminer-2.webp",
-                "../../public/image/whatsminer/Whatsminer-3.webp",
-                "../../public/image/whatsminer/Whatsminer-4.webp",
+                "/image/whatsminer/Whatsminer-main.webp",
+                "/image/whatsminer/Whatsminer-1.webp",
+                "/image/whatsminer/Whatsminer-2.webp",
+                "/image/whatsminer/Whatsminer-3.webp",
+                "/image/whatsminer/Whatsminer-4.webp",
               ],
               tableInfo: {
                 algorithm: "SHA256",

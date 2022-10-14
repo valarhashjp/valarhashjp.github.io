@@ -54,7 +54,7 @@
           <div class="ProductConsultation">
             <img
               class="icon"
-              src="../../../../public/image/icon/Envelope.png"
+              src="/image/icon/Envelope.png"
               alt=""
             />
             <span>{{ t("ProductConsultation") }}</span>

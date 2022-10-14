@@ -50,10 +50,10 @@ const lang = computed(() => {
   <header>
     <div class="flex al-c">
       <div class="iconlist" @click="data.drawer = true">
-        <img src="../../public/image/icon/iconlist.png" />
+        <img src="/image/icon/iconlist.png" />
       </div>
       <div class="headerlogo-box">
-        <img class="headerlogo" src="../../public/image/headerLogo.png" />
+        <img class="headerlogo" src="/image/headerLogo.png" />
       </div>
       <ul class="nav">
         <li
@@ -80,9 +80,9 @@ const lang = computed(() => {
     </div>
     <div class="lang-box">
       <div class="flex al-c" @mouseenter="data.selectLangShow = true">
-        <img src="../../public/image/icon_language.png" alt="" />
+        <img src="/image/icon_language.png" alt="" />
         <span class="activeLang">{{ lang }}</span>
-        <img src="../../public/image/icon_drop down.png" alt="" />
+        <img src="/image/icon_drop down.png" alt="" />
       </div>
       <div
         v-show="data.selectLangShow"
@@ -101,7 +101,7 @@ const lang = computed(() => {
     >
       <div>
         <div class="logo-box">
-          <img class="logo" src="../../public/image/headerLogo.png" />
+          <img class="logo" src="/image/headerLogo.png" />
         </div>
         <ul class="drawernav">
           <li

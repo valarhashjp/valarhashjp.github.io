@@ -1,6 +1,6 @@
 <template>
   <div class="MinerSalesBanner">
-    <img src="../../../../public/image/img_hostingService.png" alt="" />
+    <img src="/image/img_hostingService.png" alt="" />
   </div>
 
   <div class="box">

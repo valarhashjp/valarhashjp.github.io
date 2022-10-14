@@ -37,7 +37,7 @@ const choose = (key: string) => {
 </script>
 <template>
   <main>
-    <img class="banner" src="../../../public/image/img_contactus.png" alt="" />
+    <img class="banner" src="/image/img_contactus.png" alt="" />
     <div class="center">
       <h2>{{ t("ContactUs") }}</h2>
       <div class="line"></div>

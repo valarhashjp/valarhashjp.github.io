@@ -1,6 +1,6 @@
 <template >
     <main>
-        <img class="img" src="../../../../public/image/img_MinerHostingServices.png" alt="" />
+        <img class="img" src="/image/img_MinerHostingServices.png" alt="" />
         <div>
             {{t('comingSoon')}}
         </div>

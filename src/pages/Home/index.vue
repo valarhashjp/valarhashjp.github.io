@@ -23,10 +23,10 @@ const { t } = useI18n();
 const bannerImg: any = ref(null);
 const banner: any = ref(null);
 const productpictureInfo: productpicture = {
-  mainImg: "../../../public/image/miner1.png",
-  thumbnailTop: "../../../public/image/miner2.png",
-  thumbnailBottomLetf: "../../../public/image/miner4.png",
-  thumbnailBottomRight: "../../../public/image/miner3.png",
+  mainImg: "/image/miner1.png",
+  thumbnailTop: "/image/miner2.png",
+  thumbnailBottomLetf: "/image/miner4.png",
+  thumbnailBottomRight: "/image/miner3.png",
   Introduction: t("productName"),
 };
 
@@ -39,7 +39,7 @@ const data = reactive<{
 }>({
   bannerList: [
     {
-      url: "../../../public/image/banner1.png",
+      url: "/image/banner1.png",
       title: `${t("Valarhash")}${t("inHashwetrust")}`,
     },
   ],
@@ -106,7 +106,7 @@ onMounted(() => {
       <div class="bannerImg-box">
         <img
           class="banner-arrow banner-arrow-left"
-          src="../../../public/image/banner_arrow_left.png"
+          src="/image/banner_arrow_left.png"
           alt=""
           @click="arrowClick(arrowType.prev)"
         />
@@ -121,7 +121,7 @@ onMounted(() => {
         </div>
         <img
           class="banner-arrow banner-arrow-right"
-          src="../../../public/image/banner_arrow_right.png"
+          src="/image/banner_arrow_right.png"
           alt=""
           @click="arrowClick(arrowType.next)"
         />
@@ -141,7 +141,7 @@ onMounted(() => {
           {{ t("moreAboutus") }}
           <img
             class="btn_arrow"
-            src="../../../public/image/btn_arrow.png"
+            src="/image/btn_arrow.png"
             alt=""
           />
         </button>
@@ -209,7 +209,7 @@ onMounted(() => {
           <span>{{ t("contactUs") }}</span>
           <img
             class="btn_arrow_yellow"
-            src="../../../public/image/btn_arrow_yellow.png"
+            src="/image/btn_arrow_yellow.png"
             alt=""
           />
         </div>

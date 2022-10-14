@@ -35,40 +35,40 @@ export interface newsAndEventsItem {
 export type NewsAndEventsList = Array<NewsItem>;
 
 export const inPartnershipList = [
-  "../../../public/image/logo_antminer.png",
-  "../../../public/image/logo_whatsminer.png",
-  "../../../public/image/logo_jianan.png",
-  "../../../public/image/logo_innosilicon.png",
-  "../../../public/image/logo_iPolloStore.png",
-  "../../../public/image/logo_smic.png",
-  "../../../public/image/logo-bitdeer.png",
-  "../../../public/image/logo-whalefin.png",
-  "../../../public/image/logo_crust.png",
-  "../../../public/image/logo_astar.png",
-  "../../../public/image/logo_f2pool.png",
-  "../../../public/image/logo_btc.png",
-  "../../../public/image/logo_168node.png",
-  "../../../public/image/logo_poolin.png",
-  "../../../public/image/logo-antpool.png",
+  "/image/logo_antminer.png",
+  "/image/logo_whatsminer.png",
+  "/image/logo_jianan.png",
+  "/image/logo_innosilicon.png",
+  "/image/logo_iPolloStore.png",
+  "/image/logo_smic.png",
+  "/image/logo-bitdeer.png",
+  "/image/logo-whalefin.png",
+  "/image/logo_crust.png",
+  "/image/logo_astar.png",
+  "/image/logo_f2pool.png",
+  "/image/logo_btc.png",
+  "/image/logo_168node.png",
+  "/image/logo_poolin.png",
+  "/image/logo-antpool.png",
 ];
 export const newsAndEventsList: NewsAndEventsList = [
   
 ];
 export const whatWeDoList: WhatWeDoList = [
   {
-    imgSrc: "../../../public/image/icon_1.png",
+    imgSrc: "/image/icon_1.png",
     text: "iconText1",
   },
   {
-    imgSrc: "../../../public/image/icon_2.png",
+    imgSrc: "/image/icon_2.png",
     text: "iconText2",
   },
   {
-    imgSrc: "../../../public/image/icon_3.png",
+    imgSrc: "/image/icon_3.png",
     text: "iconText3",
   },
   {
-    imgSrc: "../../../public/image/icon_4.png",
+    imgSrc: "/image/icon_4.png",
     text: "iconText4",
   },
 ];

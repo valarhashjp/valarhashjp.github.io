@@ -19,7 +19,7 @@ defineProps<{
         </router-link>
         <img
           class="new_more"
-          src="../../../../public/image/new_more.png"
+          src="/image/new_more.png"
           alt=""
         />
       </div>

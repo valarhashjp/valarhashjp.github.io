@@ -30,7 +30,7 @@ const choose = (key: string) => {
     <span class="value" v-else> {{ selectkey }} </span>
     <img
       class="iocndown"
-      src="../../../../public/image/icon/iocndown.png"
+      src="/image/icon/iocndown.png"
       :style="{
         transform: `translateY(-50%) rotate(${
           data.selectItemShow ? '180' : '0'

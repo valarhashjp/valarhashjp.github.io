@@ -2,61 +2,61 @@
 import NodeCard, { NodeCardInfo } from "./components/NodeCard.vue";
 const nodeCardList: NodeCardInfo[] = [
   {
-    icon: "../../../public/image/nodeService/node_eth.png",
+    icon: "/image/nodeService/node_eth.png",
     name: "ETH 2.0",
     commission: "0.08%",
     apr: "9.32%",
   },
   {
-    icon: "../../../public/image/nodeService/node_polkadot.png",
+    icon: "/image/nodeService/node_polkadot.png",
     name: "Polkadot",
     commission: "0.08%",
     apr: "9.32%",
   },
   {
-    icon: "../../../public/image/nodeService/node_aptos.png",
+    icon: "/image/nodeService/node_aptos.png",
     name: "Aptos",
     commission: "0.08%",
     apr: "9.32%",
   },
   {
-    icon: "../../../public/image/nodeService/node_cosmos.png",
+    icon: "/image/nodeService/node_cosmos.png",
     name: "Cosmos",
     commission: "0.08%",
     apr: "9.32%",
   },
   {
-    icon: "../../../public/image/nodeService/node_kusama.png",
+    icon: "/image/nodeService/node_kusama.png",
     name: "Kusama",
     commission: "0.08%",
     apr: "9.32%",
   },
   {
-    icon: "../../../public/image/nodeService/node_sui.png",
+    icon: "/image/nodeService/node_sui.png",
     name: "Sui",
     commission: "0.08%",
     apr: "9.32%",
   },
   {
-    icon: "../../../public/image/nodeService/node_near.png",
+    icon: "/image/nodeService/node_near.png",
     name: "Near",
     commission: "0.08%",
     apr: "9.32%",
   },
   {
-    icon: "../../../public/image/nodeService/node_crust.png",
+    icon: "/image/nodeService/node_crust.png",
     name: "Crust",
     commission: "0.08%",
     apr: "9.32%",
   },
   {
-    icon: "../../../public/image/nodeService/node_menson.png",
+    icon: "/image/nodeService/node_menson.png",
     name: "Menson",
     commission: "0.08%",
     apr: "9.32%",
   },
   {
-    icon: "../../../public/image/nodeService/node_xx network.png",
+    icon: "/image/nodeService/node_xx network.png",
     name: "XXNetwork",
     commission: "0.08%",
     apr: "9.32%",
@@ -65,7 +65,7 @@ const nodeCardList: NodeCardInfo[] = [
 </script>
 <template>
   <main>
-    <img class="img" src="../../../public/image/img_nodeservice.png" alt="" />
+    <img class="img" src="/image/img_nodeservice.png" alt="" />
     <div class="nodeCard-box flex">
       <NodeCard
         v-for="(card, i) in nodeCardList"

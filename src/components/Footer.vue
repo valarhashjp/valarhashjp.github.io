@@ -5,19 +5,19 @@ const { t, locale } = useI18n();
 const iconList = [
   {
     link: "",
-    src: "../../public/image/icon/twitter.png",
+    src: "/image/icon/twitter.png",
   },
   {
     link: "",
-    src: "../../public/image/icon/Medium.png",
+    src: "/image/icon/Medium.png",
   },
   {
     link: "",
-    src: "../../public/image/icon/telegram.png",
+    src: "/image/icon/telegram.png",
   },
   {
     link: "",
-    src: "../../public/image/icon/YouTube.png",
+    src: "/image/icon/YouTube.png",
   },
 ];
 const footerNavList = [
@@ -46,7 +46,7 @@ const lang = computed(() => {
       <div class="content flex al-c">
         <div class="left-logo-box flex al-c">
           <div class="logo">
-            <img src="../../public/image/headerLogo.png" alt="" />
+            <img src="/image/headerLogo.png" alt="" />
           </div>
           <div class="icon-box flex al-c">
             <a v-for="(icon, i) in iconList" :key="i" :href="icon.link">
@@ -59,7 +59,7 @@ const lang = computed(() => {
             <router-link to="/">{{ t("Home") }}</router-link>
             <div class="checkLangBtn">
               <span>{{ lang }}</span>
-              <img src="../../public/image/icon/icon_language.png" alt="" />
+              <img src="/image/icon/icon_language.png" alt="" />
             </div>
           </div>
           <div class="line"></div>
