@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { onMounted, reactive, ref } from "vue";
 import { useI18n } from "vue-i18n";
-import Tips from "./components/tips.vue";
+import MyTips from "./components/MyTips.vue";
 import Productpicture from "./components/Productpicture.vue";
 import Video from "./components/Video.vue";
 import HomeTitle from "./components/HomeTitle.vue";
@@ -155,9 +155,9 @@ onMounted(() => {
   </article>
   <article class="100% bottom-line tips">
     <aside class="center flex">
-      <Tips v-for="(item, i) in tipsList" :key="i" :content="t(item.content)">
+      <MyTips v-for="(item, i) in tipsList" :key="i" :content="t(item.content)">
         <span class="tips-title">{{ item.title }}</span>
-      </Tips>
+      </MyTips>
     </aside>
   </article>
 
