@@ -219,9 +219,9 @@ onMounted(() => {
       </div>
     </aside>
     <aside class="center flex tipsbox2">
-      <Tips v-for="(item, i) in whatWeDoList" :key="i" :content="t(item.text)">
+      <MyTips v-for="(item, i) in whatWeDoList" :key="i" :content="t(item.text)">
         <img class="whatWeDoList-icon" :src="item.imgSrc" alt="" />
-      </Tips>
+      </MyTips>
     </aside>
   </article>
 
