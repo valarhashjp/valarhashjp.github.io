@@ -82,7 +82,7 @@ const lang = computed(() => {
       <div class="flex al-c" @mouseenter="data.selectLangShow = true">
         <img src="/image/icon_language.png" alt="" />
         <span class="activeLang">{{ lang }}</span>
-        <img src="/image/icon_drop down.png" alt="" />
+        <img src="/image/icon_drop-down.png" alt="" />
       </div>
       <div
         v-show="data.selectLangShow"
