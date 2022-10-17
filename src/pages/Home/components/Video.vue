@@ -1,38 +1,62 @@
 <template>
-    <div class="video">
-        
-    </div>
+  <div class="video">
+    <vue3videoPlay v-bind="options" :playsinline="true" />
+  </div>
 </template>
-  
+
 <script setup lang="ts">
+import vue3videoPlay from "vue3-video-play"; // 引入组件
+import "vue3-video-play/dist/style.css"; // 引入css
+import { onMounted, defineExpose, ref, reactive } from "vue";
 
+const visible = ref(false);
+const loading = ref(true);
+const vedioSrc = ref(null);
+const vedioTitle = ref("");
+
+onMounted(() => {});
+const options = reactive({
+  width: "100%", //播放器高度
+  height: "100%", //播放器高度
+  color: "#409eff", //主题色
+  title: "231", //视频名称
+  src: "blob:https://www.youtube.com/2e085925-25e7-4ad6-ba1b-af94d0a4262b", //视频源
+  muted: false, //静音
+  webFullScreen: false,
+  speedRate: ["0.75", "1.0", "1.25", "1.5", "2.0"], //播放倍速
+  autoPlay: true, //自动播放
+  loop: false, //循环播放
+  mirror: false, //镜像画面
+  ligthOff: false, //关灯模式
+  volume: 0.3, //默认音量大小
+  control: true, //是否显示控制
+  controlBtns: [
+    "audioTrack",
+    "quality",
+    "speedRate",
+    "volume",
+    "setting",
+    "pip",
+    "pageFullScreen",
+    "fullScreen",
+  ], //显示所有按钮,
+});
+
+const close = () => {
+  visible.value = false;
+};
+
+const openVedio = () => {
+  visible.value = true;
+  options.title = "";
+  options.src = "https://www.youtube.com/watch?v=3I8pcGM6PaU";
+};
+
+defineExpose({
+  openVedio,
+});
 </script>
-  
-<style scoped>
-.video {
-    width: 100%;
-    height: 100%;
-    margin: auto;
-}
-</style>
-<style>
-.video .vjs_video_3-dimensions.vjs-fluid {
-    padding-top: 57%;
-}
 
-.video .vjs-custom-skin>.video-js .vjs-big-play-button {
-    /* background-color: rgba(0,0,0,0.45); */
-    font-size: 3.5em;
-    border-radius: 50%;
-    height: 2em !important;
-    width: 2em !important;
-    line-height: 2em !important;
-    margin-top: -1em !important;
-    margin-left: -1em
-}
+<style lang="stylus" scoped>
 
-.video .vjs-poster {
-    background-position: center
-}
 </style>
-  
