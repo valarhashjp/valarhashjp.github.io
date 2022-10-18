@@ -51,7 +51,7 @@ const en = {
   commission: "Commission",
   APR: "APR",
   MinerSales: "Miner Sales",
-  MinerHostingServices: "Miner Hosting Services",
+  MinerHostingServices: "Miner Coming Soon",
   hashrate: "Hashrate",
   powerRatio: "Power Ratio",
   powerOnWall: "Power On Wall",
