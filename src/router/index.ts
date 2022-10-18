@@ -26,15 +26,15 @@ const routes = [
     children: [
       {
         path:'',
-        component:MiningResourcesIndex,
+        component:MinerSales,
       },
       {
         path: "MinerSales",
-        component: MinerSales,
+        component: MinerHostingServices,
       },
       {
         path: "MinerHostingServices",
-        component: MinerHostingServices,
+        component:MiningResourcesIndex,
       },
     ],
   },
