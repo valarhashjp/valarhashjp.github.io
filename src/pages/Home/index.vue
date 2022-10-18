@@ -145,10 +145,10 @@ onMounted(() => {
             alt=""
           />
         </button>
-        <!-- <div class="about-tips flex">
-          <span class="about-tips-title">{{ t("meetusbetter") }}</span>
+        <div class="about-tips flex">
+          <!-- <span class="about-tips-title">{{ t("meetusbetter") }}</span> -->
           <span class="about-tips-content">{{ t("ourHistoryinNumbers") }}</span>
-        </div> -->
+        </div>
       </div>
       <div class="about-content">{{ t("moreAboutusContent") }}</div>
     </aside>
