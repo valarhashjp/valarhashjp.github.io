@@ -66,6 +66,8 @@ const choose = (key: string) => {
         color #D1D1D1
         font-size 18px
     .iocndown
+        width 12px
+        height 12px
         position absolute
         right 24px
         top 50%

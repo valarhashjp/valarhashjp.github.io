@@ -88,7 +88,7 @@ const choose = (key: string) => {
         <div class="Detais-box">
           <div class="input">
             <span class="input-title">
-              <span class="red">*</span>{{ t("Name") }}</span
+              <span class="red">*</span>{{ t("Detais") }}</span
             >
             <textarea
               v-model="data.detais"

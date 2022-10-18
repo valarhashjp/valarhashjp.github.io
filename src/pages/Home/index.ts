@@ -78,7 +78,7 @@ export const tipsList: TipsList = [
     content: "tips1",
   },
   {
-    title: "1000",
+    title: "10000",
     content: "tips2",
   },
   {

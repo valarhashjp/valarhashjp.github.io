@@ -82,7 +82,7 @@ const jp = {
   Sales: "マイナー購入",
   BusinessCooperation: "ビジネス協力",
   ComplaintsandSugge: "クレームと要望",
-  AddressContent: "大阪市阿倍野区阿倍野筋1-1-43",
+  AddressContent: "大阪府大阪市阿倍野区阿倍野筋1-1-43あべのハルカス31階",
   introduce: "概要",
   specification: "仕様",
   algorithm: "アルゴリズム",
