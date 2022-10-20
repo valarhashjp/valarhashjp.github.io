@@ -87,7 +87,7 @@ const jp = {
   specification: "仕様",
   algorithm: "アルゴリズム",
   temperature: "稼働温度",
-  footerText1: "Copyright © 2022 ALARHASH Technologies Holding Company.",
+  footerText1: "Copyright © 2022 VALARHASH Technologies Holding Company.",
   footerText2: "All Rights Reserved. ",
   footerText3: "Terms of Use",
   footerText4: "Privacy Policy",
