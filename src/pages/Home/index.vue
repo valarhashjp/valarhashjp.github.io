@@ -39,7 +39,7 @@ const data = reactive<{
 }>({
   bannerList: [
     {
-      url: "/image/banner1.png",
+      url: "/image/img_MinerHostingServices.png",
       title: `${t("Valarhash")}${t("inHashwetrust")}`,
     },
   ],

@@ -20,38 +20,23 @@ const iconList = [
     src: "/image/icon/YouTube.png",
   },
 ];
-const footerNavList1 = [
-  { text: "aboutAlarhash", link: "", type: false },
-  { text: "CompanyProfile", link: "/CompanyProfile", type: true },
+
+const footerNavList = [
+  [
+    { text: "aboutAlarhash", link: "", type: false },
+    { text: "CompanyProfile", link: "/CompanyProfile", type: true },
+  ],
+  [
+    { text: "MiningResources", link: "/MiningResources", type: true },
+    { text: "minerSales", link: "", type: false },
+    { text: "minerHostingServic", link: "", type: false },
+  ],
+  [{ text: "NodeService", link: "/NodeService", type: true }],
+  [
+    { text: "ContactUs", link: "/ContactUs", type: true },
+    { text: "hanetsu", link: "", type: false },
+  ],
 ];
-const footerNavList2 = [
-  { text: "MiningResources", link: "/MiningResources", type: true },
-  { text: "minerSales", link: "", type: false },
-  { text: "minerHostingServic", link: "", type: false },
-];
-const footerNavList3 = [
-  { text: "NodeService", link: "/NodeService", type: true },
-];
-const footerNavList4 = [
-  { text: "ContactUs", link: "/ContactUs", type: true },
-  { text: "hanetsu", link: "", type: false },
-];
-// const footerNavList = [
-//   [
-//     { text: "aboutAlarhash", link: "", type: false },
-//     { text: "CompanyProfile", link: "/CompanyProfile", type: true },
-//   ],
-//   [
-//     { text: "MiningResources", link: "/MiningResources", type: true },
-//     { text: "minerSales", link: "", type: false },
-//     { text: "minerHostingServic", link: "", type: false },
-//   ],
-//   [{ text: "NodeService", link: "/NodeService", type: true }],
-//   [
-//     { text: "ContactUs", link: "/ContactUs", type: true },
-//     { text: "hanetsu", link: "", type: false },
-//   ],
-// ];
 const lang = computed(() => {
   return locale.value == "en" ? "English" : "日本";
 });
@@ -80,36 +65,20 @@ const lang = computed(() => {
           </div>
           <div class="line"></div>
           <div class="right-nav-bottom flex">
-            <div class="nav-item flex">
-              <span v-for="(item, j) in footerNavList1" :key="j" class="link">
-                <router-link :to="item.link" v-if="item.type">{{
+            <div
+              class="nav-item flex"
+              v-for="(nav, a) in footerNavList"
+              :key="a"
+            >
+              <span
+                v-for="(item, j) in nav"
+                :key="j"
+                class="link"
+              >
+                <router-link :to="item.link">{{
                   $t(item.text)
                 }}</router-link>
-                <a :href="item.link" v-else>{{ $t(item.text) }}</a>
-              </span>
-            </div>
-            <div class="nav-item flex">
-              <span v-for="(item, j) in footerNavList2" :key="j" class="link">
-                <router-link :to="item.link" v-if="item.type">{{
-                  $t(item.text)
-                }}</router-link>
-                <a :href="item.link" v-else>{{ $t(item.text) }}</a>
-              </span>
-            </div>
-            <div class="nav-item flex">
-              <span v-for="(item, j) in footerNavList3" :key="j" class="link">
-                <router-link :to="item.link" v-if="item.type">{{
-                  $t(item.text)
-                }}</router-link>
-                <a :href="item.link" v-else>{{ $t(item.text) }}</a>
-              </span>
-            </div>
-            <div class="nav-item flex">
-              <span v-for="(item, j) in footerNavList4" :key="j" class="link">
-                <router-link :to="item.link" v-if="item.type">{{
-                  $t(item.text)
-                }}</router-link>
-                <a :href="item.link" v-else>{{ $t(item.text) }}</a>
+                
               </span>
             </div>
           </div>
@@ -177,7 +146,7 @@ const lang = computed(() => {
                           &:first-child
                             margin-bottom 26px
                             font-weight 600
-
+                      
   .footer-bottom
       width 100%
       height 100px
