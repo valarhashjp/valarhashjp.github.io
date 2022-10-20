@@ -43,7 +43,7 @@ const setlocale = (type: string) => {
   locale.value = type;
 };
 const lang = computed(() => {
-  return locale.value == "en" ? "English" : "日本";
+  return locale.value == "en" ? "English" : "日本語";
 });
 </script>
 <template>
@@ -91,7 +91,7 @@ const lang = computed(() => {
         @mouseleave="data.selectLangShow = false"
       >
         <div class="selectLang-item" @click="setlocale('en')">English</div>
-        <div class="selectLang-item" @click="setlocale('ja')">日本</div>
+        <div class="selectLang-item" @click="setlocale('ja')">日本語</div>
       </div>
     </div>
     <el-drawer

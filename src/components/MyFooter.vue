@@ -38,7 +38,7 @@ const footerNavList = [
   ],
 ];
 const lang = computed(() => {
-  return locale.value == "en" ? "English" : "日本";
+  return locale.value == "en" ? "English" : "日本語";
 });
 </script>
 <template>
