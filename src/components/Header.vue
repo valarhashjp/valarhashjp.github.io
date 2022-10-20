@@ -156,7 +156,6 @@ header
                 height 58px
                 line-height 58px
                 text-align center
-                box-shadow 0px 3px 6px 0px rgba(0,0,0,0.12)
                 border 1px solid #D8D8D8
                 &:hover
                     background #A88217
