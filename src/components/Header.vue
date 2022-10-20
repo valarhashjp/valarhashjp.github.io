@@ -62,13 +62,14 @@ const lang = computed(() => {
           :key="i"
           @mouseenter="navHover(li)"
         >
-          <router-link :to="li.path">{{ $t(li.title) }}</router-link>
+          <router-link :to="li.path" v-if="li.path !== '/MiningResources'">{{ $t(li.title) }}</router-link>
+          <span v-else>{{$t(li.title)}}</span>
           <div
             v-show="data.selectMinerShow && li.path === '/MiningResources'"
             class="selectMiner-box flex al-c"
             @mouseleave="data.selectMinerShow = false"
           >
-            <router-link to="/MiningResources/MinerSales">
+            <router-link to="/MiningResources">
               <div class="selectLang-item">{{ t("MinerSales") }}</div>
             </router-link>
             <router-link to="/MiningResources/MinerHostingServices">
