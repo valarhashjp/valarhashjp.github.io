@@ -42,7 +42,7 @@ const lang = computed(() => {
 </script>
 <template>
   <div>
-    <!-- <div class="footer-top">
+    <div class="footer-top">
       <div class="content flex al-c">
         <div class="left-logo-box flex al-c">
           <div class="logo">
@@ -84,8 +84,8 @@ const lang = computed(() => {
           </div>
         </div>
       </div>
-    </div> -->
-    <div class="footer-bottom">
+    </div>
+    <!-- <div class="footer-bottom">
       <div class="footer-bottm-text">
         <span>{{ t("footerText1") }}</span>
         <span>{{ t("footerText2") }}</span>
@@ -93,7 +93,7 @@ const lang = computed(() => {
         <span class="line"></span>
         <span class="Privacy">{{ t("footerText4") }}</span>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 <style lang="stylus" scoped>

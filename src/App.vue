@@ -7,6 +7,7 @@
   <Header></Header>
   <router-view></router-view>
   <Footer></Footer>
+  <Statement></Statement>
 </template>
 
 <style scoped>
