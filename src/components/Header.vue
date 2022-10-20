@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { computed, onMounted, reactive, watch } from "vue";
+import { computed, reactive } from "vue";
 import { useI18n } from "vue-i18n";
 let { t, locale } = useI18n();
 interface navItem {
