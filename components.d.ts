@@ -12,6 +12,7 @@ declare module '@vue/runtime-core' {
     ElDrawer: typeof import('element-plus/es')['ElDrawer']
     Footer: typeof import('./src/components/Footer.vue')['default']
     Header: typeof import('./src/components/Header.vue')['default']
+    MyFooter: typeof import('./src/components/MyFooter.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Statement: typeof import('./src/components/Statement.vue')['default']
