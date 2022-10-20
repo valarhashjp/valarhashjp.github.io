@@ -29,7 +29,8 @@ defineProps({
         margin-bottom 5px
         font-weight bold
     .tips-content
-         font-size: 24px;
+
+         font-size: 20px;
          font-weight 500
 @media screen and (max-width: 960px)
     .tips-item

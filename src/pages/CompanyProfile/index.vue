@@ -41,10 +41,12 @@ const { t } = useI18n();
             margin 150px 0
         .content
             width 500px
+            font-size: 16px
     .companyProfile-right
         width 567px
         .content
             width 100%
+            font-size: 16px
 .content
     margin-bottom  100px
     font-size: 24px

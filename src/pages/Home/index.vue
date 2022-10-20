@@ -355,7 +355,7 @@ onMounted(() => {
                     font-size: 42px;
         .about-content
             width 500px
-            font-size 24px
+            font-size 16px
             color #1E1E1E
             line-height:29px
             font-weight 100
@@ -408,7 +408,7 @@ onMounted(() => {
                         .who
                             font-weight 600
                     .selfIntroduction-center-text
-                        font-size 24px
+                        font-size 16px
                         font-weight 100
                         color #FFFFFF
                         line-height 36px

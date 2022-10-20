@@ -161,6 +161,8 @@ header
                 &:hover
                     background #A88217
                     color #fff
+                &:first-child
+                    box-shadow: none !important
 
 .activeLang
     margin 0 3px 0 6px
