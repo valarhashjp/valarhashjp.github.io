@@ -63,7 +63,7 @@ const lang = computed(() => {
             </div>
           </div>
           <div class="line"></div>
-          <div class="right-nav-bottom flex">
+          <!-- <div class="right-nav-bottom flex">
             <div
               class="nav-item flex"
               v-for="(nav, i) in footerNavList"
@@ -81,7 +81,7 @@ const lang = computed(() => {
                 <a :href="item.link" v-else>{{ $t(item.text) }}</a>
               </span>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
