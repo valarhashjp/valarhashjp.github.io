@@ -17,7 +17,7 @@ dd {
   padding: 0;
   /*字体设置*/
   font-size: 14px;
-  font-family: 'Noto Sans CJK JP' , 'Noto Sans JP' , sans-serif;
+  font-family:"NotoSerifJP-Medium",'HelveticaNeue','SawarabiGothic', 'Noto Sans CJK JP' , 'Noto Sans JP' , 'sans-serif';
 
   /* 去掉列表的原点 */
   list-style: none;
