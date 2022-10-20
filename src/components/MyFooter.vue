@@ -44,7 +44,7 @@ const lang = computed(() => {
   <div>
     <div class="footer-top">
       ???????????
-      <!-- <div class="content flex al-c">
+      <div class="content flex al-c">
         <div class="left-logo-box flex al-c">
           <div class="logo">
             <img src="/image/headerLogo.png" alt="" />
@@ -55,7 +55,7 @@ const lang = computed(() => {
             /></a>
           </div>
         </div>
-        <div class="right-nav-box">
+        <!-- <div class="right-nav-box">
           <div class="right-nav-top flex">
             <router-link to="/">{{ t("Home") }}</router-link>
             <div class="checkLangBtn">
@@ -83,8 +83,8 @@ const lang = computed(() => {
               </span>
             </div>
           </div>
-        </div>
-      </div> -->
+        </div> -->
+      </div>
     </div>
     <!-- <div class="footer-bottom">
       <div class="footer-bottm-text">
