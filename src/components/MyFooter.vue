@@ -43,7 +43,8 @@ const lang = computed(() => {
 <template>
   <div>
     <div class="footer-top">
-      <div class="content flex al-c">
+      ???????????
+      <!-- <div class="content flex al-c">
         <div class="left-logo-box flex al-c">
           <div class="logo">
             <img src="/image/headerLogo.png" alt="" />
@@ -83,7 +84,7 @@ const lang = computed(() => {
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
     <!-- <div class="footer-bottom">
       <div class="footer-bottm-text">
