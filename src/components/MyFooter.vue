@@ -23,18 +23,18 @@ const iconList = [
 
 const footerNavList = [
   [
-    { text: "aboutAlarhash", link: "", type: 0 },
-    { text: "CompanyProfile", link: "/CompanyProfile", type: 1 },
+    { text: "aboutAlarhash", link: "", type: false },
+    { text: "CompanyProfile", link: "/CompanyProfile", type: true },
   ],
   [
-    { text: "MiningResources", link: "/MiningResources", type: 1 },
-    { text: "minerSales", link: "", type: 0 },
-    { text: "minerHostingServic", link: "", type: 0 },
+    { text: "MiningResources", link: "/MiningResources", type: true },
+    { text: "minerSales", link: "", type: false },
+    { text: "minerHostingServic", link: "", type: false },
   ],
-  [{ text: "NodeService", link: "/NodeService", type: 1 }],
+  [{ text: "NodeService", link: "/NodeService", type: true }],
   [
-    { text: "ContactUs", link: "/ContactUs", type: 1 },
-    { text: "hanetsu", link: "", type: 0 },
+    { text: "ContactUs", link: "/ContactUs", type: true },
+    { text: "hanetsu", link: "", type: false },
   ],
 ];
 const lang = computed(() => {
@@ -67,21 +67,19 @@ const lang = computed(() => {
           <div class="right-nav-bottom flex">
             <div
               class="nav-item flex"
-              v-for="(nav, i) in footerNavList"
-              :key="i"
+              v-for="(nav, a) in footerNavList"
+              :key="a"
             >
-            {{nav}}
-              <!-- <span
+              <span
                 v-for="(item, j) in nav"
                 :key="j"
-                :class="'link' + j"
                 class="link"
               >
                 <router-link :to="item.link" v-if="item.type">{{
                   $t(item.text)
                 }}</router-link>
                 <a :href="item.link" v-else>{{ $t(item.text) }}</a>
-              </span> -->
+              </span>
             </div>
           </div>
         </div>
@@ -145,9 +143,10 @@ const lang = computed(() => {
                               &:hover
                                   color #A88217
                                   text-decoration underline
-                      .link0
-                          margin-bottom 26px
-                          font-weight 600
+                          &:first-child
+                            margin-bottom 26px
+                            font-weight 600
+                      
   .footer-bottom
       width 100%
       height 100px
