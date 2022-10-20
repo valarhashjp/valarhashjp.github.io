@@ -43,7 +43,6 @@ const lang = computed(() => {
 <template>
   <div>
     <div class="footer-top">
-      ???????????
       <div class="content flex al-c">
         <div class="left-logo-box flex al-c">
           <div class="logo">
@@ -55,7 +54,7 @@ const lang = computed(() => {
             /></a>
           </div>
         </div>
-        <!-- <div class="right-nav-box">
+        <div class="right-nav-box">
           <div class="right-nav-top flex">
             <router-link to="/">{{ t("Home") }}</router-link>
             <div class="checkLangBtn">
@@ -83,18 +82,10 @@ const lang = computed(() => {
               </span>
             </div>
           </div>
-        </div> -->
+        </div>
       </div>
     </div>
-    <!-- <div class="footer-bottom">
-      <div class="footer-bottm-text">
-        <span>{{ t("footerText1") }}</span>
-        <span>{{ t("footerText2") }}</span>
-        <span class="Terms">{{ t("footerText3") }}</span>
-        <span class="line"></span>
-        <span class="Privacy">{{ t("footerText4") }}</span>
-      </div>
-    </div> -->
+
   </div>
 </template>
 <style lang="stylus" scoped>
@@ -133,7 +124,7 @@ const lang = computed(() => {
                       display flex
                       align-items center
                       justify-content space-evenly
-                      img 
+                      img
                         width 18px
                         height 18px
               .line
