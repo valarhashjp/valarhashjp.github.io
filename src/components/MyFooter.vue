@@ -20,6 +20,7 @@ const iconList = [
     src: "/image/icon/YouTube.png",
   },
 ];
+
 const footerNavList = [
   [
     { text: "aboutAlarhash", link: "", type: 0 },
@@ -63,13 +64,14 @@ const lang = computed(() => {
             </div>
           </div>
           <div class="line"></div>
-          <!-- <div class="right-nav-bottom flex">
+          <div class="right-nav-bottom flex">
             <div
               class="nav-item flex"
               v-for="(nav, i) in footerNavList"
               :key="i"
             >
-              <span
+            {{nav}}
+              <!-- <span
                 v-for="(item, j) in nav"
                 :key="j"
                 :class="'link' + j"
@@ -79,13 +81,12 @@ const lang = computed(() => {
                   $t(item.text)
                 }}</router-link>
                 <a :href="item.link" v-else>{{ $t(item.text) }}</a>
-              </span>
+              </span> -->
             </div>
-          </div> -->
+          </div>
         </div>
       </div>
     </div>
-
   </div>
 </template>
 <style lang="stylus" scoped>
