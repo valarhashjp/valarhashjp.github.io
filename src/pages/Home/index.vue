@@ -58,7 +58,7 @@ const arrowClick = (type: arrowType) =>
   type == arrowType.next ? banner.value.next() : banner.value.prev();
 const getbanner = async () => {
   const res = await GET_BANNER_LIST_RUL_API();
-  // data.bannerList = res.data
+  data.bannerList = res.data
 };
 const getNews = async () => {
   const res = await GET_NEWS_LSIT_URL_API(3, data.pageNum);
