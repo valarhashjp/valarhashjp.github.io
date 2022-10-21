@@ -42,7 +42,7 @@ const en = {
   minerHostingServic: "Miner Hosting Servic",
   hanetsu: "hanetsu@vhash.io",
   companyProfile1:
-    "Valarhash is an innovative ecological platform focusing on the blockchain industry. We have been running Bitcoin mining business for over 9 years since 2013, with 10,000P of hashrate power. We established the 1tMine mining pool in 2019 and relocated our headquarters to US in 2021, and committed on leveraging more green energy in our business.",
+    "Valarhash is an innovative ecological platform focusing on the blockchain industry. We have been running Bitcoin mining business for over 9 years since 2013, with 10,000P of hashrate power. We established the 1tHash mining pool in 2019 and relocated our headquarters to US in 2021, and committed on leveraging more green energy in our business.",
   companyProfile2:
     "From a global perspective, Valarhash has established the industry leader role in the ASIC mining market. Furthermore, we have dedicated to the effort of integrating cutting-edge technologies and resources, to connect the physical and digital worlds with blockchain. In the past 9 years with the evolvement of ASIC mining industry, Valarhash has built broad partnerships and resource advantages over United States, Canada, Sweden, Southeast Asia, and other regions, and initiated efforts to build significant amount of data centers.",
   companyProfile3:
