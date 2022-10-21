@@ -29,7 +29,7 @@ const footerNavList = [
   [
     { text: "MiningResources", link: "/MiningResources", type: true },
     { text: "minerSales", link: "", type: false },
-    { text: "minerHostingServic", link: "", type: false },
+    { text: "MinerHostingServices", link: "", type: false },
   ],
   [{ text: "NodeService", link: "/NodeService", type: true }],
   [

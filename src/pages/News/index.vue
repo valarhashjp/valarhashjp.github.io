@@ -27,6 +27,31 @@ onMounted(() => {
 });
 </script>
 <template>
-  <main></main>
+  <main>
+    <h1>
+      {{data.newsInfo.title}}
+    </h1>
+    <img class="newsimg" :src="data.newsInfo.figure" alt="">
+    <div class="html-box" v-html="data.newsInfo.content">
+
+    </div>
+  </main>
 </template>
-<style lang="stylus" scoped></style>
+<style lang="stylus" scoped>
+main
+  width 100%
+  max-width 750px
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+  margin 0 auto
+  h1
+    font-size 44px
+    margin-top 52px
+  .newsimg
+    width 100%
+    margin 44px 0
+  .html-box
+    width 100%
+</style>
