@@ -20,7 +20,7 @@ const options = reactive({
   height: "100%", //播放器高度
   color: "#409eff", //主题色
   title: "231", //视频名称
-  src: "blob:https://www.youtube.com/2e085925-25e7-4ad6-ba1b-af94d0a4262b", //视频源
+  src: "https://image.valarhashjp.com/valarhash.mp4", //视频源
   muted: false, //静音
   webFullScreen: false,
   speedRate: ["0.75", "1.0", "1.25", "1.5", "2.0"], //播放倍速
@@ -49,7 +49,7 @@ const close = () => {
 const openVedio = () => {
   visible.value = true;
   options.title = "";
-  options.src = "https://www.youtube.com/watch?v=3I8pcGM6PaU";
+  options.src = "https://image.valarhashjp.com/valarhash.mp4";
 };
 
 defineExpose({
