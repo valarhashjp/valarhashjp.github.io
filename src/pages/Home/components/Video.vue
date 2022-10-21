@@ -1,60 +1,13 @@
 <template>
   <div class="video">
-    <vue3videoPlay v-bind="options" :playsinline="true" />
+    <iframe width="750" height="421" src="https://www.youtube.com/embed/3I8pcGM6PaU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+   
   </div>
 </template>
 
 <script setup lang="ts">
-import vue3videoPlay from "vue3-video-play"; // 引入组件
-import "vue3-video-play/dist/style.css"; // 引入css
-import { onMounted, defineExpose, ref, reactive } from "vue";
 
-const visible = ref(false);
-const loading = ref(true);
-const vedioSrc = ref(null);
-const vedioTitle = ref("");
 
-onMounted(() => {});
-const options = reactive({
-  width: "100%", //播放器高度
-  height: "100%", //播放器高度
-  color: "#409eff", //主题色
-  title: "231", //视频名称
-  src: "https://image.valarhashjp.com/valarhash.mp4", //视频源
-  muted: false, //静音
-  webFullScreen: false,
-  speedRate: ["0.75", "1.0", "1.25", "1.5", "2.0"], //播放倍速
-  autoPlay: true, //自动播放
-  loop: false, //循环播放
-  mirror: false, //镜像画面
-  ligthOff: false, //关灯模式
-  volume: 0.3, //默认音量大小
-  control: true, //是否显示控制
-  controlBtns: [
-    "audioTrack",
-    "quality",
-    "speedRate",
-    "volume",
-    "setting",
-    "pip",
-    "pageFullScreen",
-    "fullScreen",
-  ], //显示所有按钮,
-});
-
-const close = () => {
-  visible.value = false;
-};
-
-const openVedio = () => {
-  visible.value = true;
-  options.title = "";
-  options.src = "https://image.valarhashjp.com/valarhash.mp4";
-};
-
-defineExpose({
-  openVedio,
-});
 </script>
 
 <style lang="stylus" scoped>
