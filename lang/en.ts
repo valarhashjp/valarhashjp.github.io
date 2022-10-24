@@ -71,7 +71,7 @@ const en = {
   Detais: "Detais",
   detaisDisabled:
     "We will reply to you as soon as we can and keep your information in private",
-  Comfirm: "Comfirm",
+  Comfirm: "Confirm",
   PSU: "PSU",
   Size: "Size",
   Weight: "Weight",

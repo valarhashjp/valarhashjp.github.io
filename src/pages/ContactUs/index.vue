@@ -192,9 +192,11 @@ const verify = computed(() => {
         font-size 18px
         padding-left 24px
         box-sizing border-box
+        font-family "NotoSerifJP-Medium",'HelveticaNeue','SawarabiGothic', 'Noto Sans CJK JP' , 'Noto Sans JP' , 'sans-serif';
 
   .Detais-box
     margin-top 40px
+    
     .red
       color #E02020
       margin 0 2px
@@ -209,6 +211,7 @@ const verify = computed(() => {
       padding 14px 24px
       box-sizing border-box
       font-size 18px
+      font-family "NotoSerifJP-Medium",'HelveticaNeue','SawarabiGothic', 'Noto Sans CJK JP' , 'Noto Sans JP' , 'sans-serif';
   .submitBtn
       margin-top 44px
       width: 249px;
