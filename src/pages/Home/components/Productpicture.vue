@@ -4,7 +4,7 @@
       <img :src="productpictureInfo.mainImg" alt="" />
       <div class="productpictureInfoTextBox">
         <div class="productpictureInfoText">
-          {{ productpictureInfo.Introduction }}
+          {{ productpictureInfo.mainImgText }}
         </div>
       </div>
     </div>
@@ -13,7 +13,7 @@
         <img :src="productpictureInfo.thumbnailTop" alt="" />
         <div class="productpictureInfoTextBox">
           <div class="productpictureInfoText">
-            {{ productpictureInfo.Introduction }}
+            {{ productpictureInfo.thumbnailTopText }}
           </div>
         </div>
       </div>
@@ -22,7 +22,7 @@
           <img :src="productpictureInfo.thumbnailBottomLetf" alt="" />
           <div class="productpictureInfoTextBox">
             <div class="productpictureInfoText">
-              {{ productpictureInfo.Introduction }}
+              {{ productpictureInfo.thumbnailBottomLetfText }}
             </div>
           </div>
         </div>
@@ -30,7 +30,7 @@
           <img :src="productpictureInfo.thumbnailBottomRight" alt="" />
           <div class="productpictureInfoTextBox">
             <div class="productpictureInfoText">
-              {{ productpictureInfo.Introduction }}
+              {{ productpictureInfo.thumbnailBottomRightText }}
             </div>
           </div>
         </div>
@@ -85,6 +85,7 @@ const data = reactive({
         top 0px
         left 0px
         transform: translateY(100%);
+        // transform: translateY(0);
         transition: all 0.3s;
         .productpictureInfoText
             position absolute

@@ -112,7 +112,7 @@ export const store = createStore<Store>({
               powerRatio: "0.8",
               powerOnWall: "1920w± 5%",
               showPictures: [
-                "/image/bitmain/ETHETC-main.png",
+                "/image/bitmain/ETHETC-main.jpg",
                 "/image/bitmain/ETHETC-1.jpg",
                 "/image/bitmain/ETHETC-2.jpg",
               ],

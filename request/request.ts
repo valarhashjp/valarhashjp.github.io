@@ -5,7 +5,7 @@ const LOC_URL = "http://192.168.1.191:3000/"
 
 type RequestConfig = {
   method?: "get" | "post" | "put" | "delete";
-  hint: boolean;
+  hint?: boolean;
 };
 export type ResponseFun<T> = (
   url: string,

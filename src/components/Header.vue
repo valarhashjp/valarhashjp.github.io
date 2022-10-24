@@ -72,7 +72,7 @@ const lang = computed(() => {
             <router-link to="/MiningResources">
               <div class="selectLang-item">{{ t("MinerSales") }}</div>
             </router-link>
-            <router-link to="/MiningResources/MinerHostingServices">
+            <router-link to="/MiningResources/MinerSales">
               <div class="selectLang-item">{{ t("MinerHostingServices") }}</div>
             </router-link>
           </div>

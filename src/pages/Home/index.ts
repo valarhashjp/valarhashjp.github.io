@@ -4,7 +4,10 @@ export type productpicture = {
   thumbnailTop: string;
   thumbnailBottomLetf: string;
   thumbnailBottomRight: string;
-  Introduction: string;
+  mainImgText:string;
+  thumbnailTopText:string
+  thumbnailBottomLetfText:string
+  thumbnailBottomRightText:string
 };
 export enum arrowType {
   next,

@@ -23,6 +23,15 @@ type T_GET_NEWS_INFO_API = (
   data: NewsItem;
 }>;
 
+type T_SEND_EMAIL_API= (from:{
+  inquiry:string,
+  name:string,
+  email:string,
+  details:string
+})=>Promise<{
+  data:any
+}>
+
 export const GET_BANNER_LIST_RUL_API: T_GET_BANNER_LIST_RUL_API = () =>
   request(GET_BANNER_LIST_URL);
 
@@ -35,3 +44,7 @@ export const GET_NEWS_LSIT_URL_API: T_GET_NEWS_LSIT_URL_API = (
 const GET_NEWS_INFO = "common/news";
 export const GET_NEWS_INFO_API:T_GET_NEWS_INFO_API = (ID: number) =>
   request(`${GET_NEWS_INFO}/${ID}`);
+
+
+const SEND_EMAIL_URL = 'common/sendEmail'
+export const SEND_EMAIL_API:T_SEND_EMAIL_API = (data)=>request(SEND_EMAIL_URL,data,{method:'post'})

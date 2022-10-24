@@ -2,7 +2,10 @@
 import { SelectData } from "../../types";
 import { useI18n } from "vue-i18n";
 import Myselect from "./components/Myselect.vue";
-import { reactive } from "vue";
+import { computed, reactive } from "vue";
+import { SEND_EMAIL_API } from "../../../request/apis";
+import { ElMessage } from "element-plus";
+
 const { t } = useI18n();
 
 const data = reactive<{
@@ -31,9 +34,39 @@ const data = reactive<{
   email: "",
   detais: "",
 });
+const postForm = () => {
+  const form = {
+    inquiry: data.SelectKey,
+    name: data.name,
+    email: data.email,
+    details: data.email,
+  };
+  try {
+    SEND_EMAIL_API(form);
+    ElMessage({
+      message: t("msgText"),
+      type: "success",
+    });
+  } catch (e) {
+    console.log(e);
+  }
+};
 const choose = (key: string) => {
   data.SelectKey = key;
 };
+const verify = computed(() => {
+  if (data.SelectKey && data.name && data.email && data.detais) {
+    const emailRex =
+      /^[A-Za-z0-9\u4e00-\u9fa5]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/;
+    if (emailRex.test(data.email)) {
+      return true;
+    } else {
+      return false;
+    }
+  } else {
+    return false;
+  }
+});
 </script>
 <template>
   <main>
@@ -96,7 +129,10 @@ const choose = (key: string) => {
             ></textarea>
           </div>
         </div>
-        <div class="submitBtn">{{ t("comfirm") }}</div>
+        <div class="submitBtn" @click="postForm" v-if="verify">
+          {{ t("Comfirm") }}
+        </div>
+        <div class="notSubmitBtn submitBtn" v-else>{{ t("Comfirm") }}</div>
       </div>
     </div>
   </main>
@@ -182,6 +218,9 @@ const choose = (key: string) => {
       line-height 60px
       text-align center
       color #fff
+  .notSubmitBtn
+      opacity: 0.4;
+
 .input-main::placeholder {
         color: #D1D1D1;
         font-size 18px

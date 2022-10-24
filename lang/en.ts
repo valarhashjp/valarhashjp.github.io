@@ -91,5 +91,10 @@ const en = {
   footerText2: "All Rights Reserved. ",
   footerText3: "Terms of Use",
   footerText4: "Privacy Policy",
+  mainImgText:"Whatsminer M50S",
+  thumbnailTopText:"Whatsminer M53",
+  thumbnailBottomLetfText:"Bitmain S19",
+  thumbnailBottomRightText:"Bitmain S19 Hydro",
+  msgText:"Submitted successfully"
 };
 export default en;

@@ -30,11 +30,11 @@ const routes = [
       },
       {
         path: "MinerSales",
-        component: MinerHostingServices,
+        component: MiningResourcesIndex,
       },
       {
         path: "MinerHostingServices",
-        component:MiningResourcesIndex,
+        component:MinerHostingServices,
       },
     ],
   },

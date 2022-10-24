@@ -27,7 +27,10 @@ const productpictureInfo: productpicture = {
   thumbnailTop: "/image/miner2.png",
   thumbnailBottomLetf: "/image/miner4.png",
   thumbnailBottomRight: "/image/miner3.png",
-  Introduction: t("productName"),
+  mainImgText: t("mainImgText"),
+  thumbnailTopText: t("thumbnailTopText"),
+  thumbnailBottomLetfText: t("thumbnailBottomLetfText"),
+  thumbnailBottomRightText: t("thumbnailBottomRightText"),
 };
 
 const data = reactive<{
@@ -58,7 +61,7 @@ const arrowClick = (type: arrowType) =>
   type == arrowType.next ? banner.value.next() : banner.value.prev();
 const getbanner = async () => {
   const res = await GET_BANNER_LIST_RUL_API();
-  data.bannerList = res.data
+  data.bannerList = res.data;
 };
 const getNews = async () => {
   const res = await GET_NEWS_LSIT_URL_API(3, data.pageNum);
@@ -139,11 +142,7 @@ onMounted(() => {
       <div class="about-left">
         <button class="aboutBtn">
           {{ t("moreAboutus") }}
-          <img
-            class="btn_arrow"
-            src="/image/btn_arrow.png"
-            alt=""
-          />
+          <img class="btn_arrow" src="/image/btn_arrow.png" alt="" />
         </button>
         <div class="about-tips flex">
           <!-- <span class="about-tips-title">{{ t("meetusbetter") }}</span> -->
@@ -215,11 +214,15 @@ onMounted(() => {
         </div>
       </div>
       <div class="video">
-        <Video ></Video>
+        <Video></Video>
       </div>
     </aside>
     <aside class="center flex tipsbox2">
-      <MyTips v-for="(item, i) in whatWeDoList" :key="i" :content="t(item.text)">
+      <MyTips
+        v-for="(item, i) in whatWeDoList"
+        :key="i"
+        :content="t(item.text)"
+      >
         <img class="whatWeDoList-icon" :src="item.imgSrc" alt="" />
       </MyTips>
     </aside>
