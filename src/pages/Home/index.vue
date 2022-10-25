@@ -103,7 +103,8 @@ onMounted(() => {
     :height="data.bannerH"
     indicator-position="none"
     arrow="never"
-    :autoplay="false"
+    :autoplay="true"
+    :interval="5000"
   >
     <el-carousel-item v-for="(item, i) in data.bannerList" :key="i">
       <div class="bannerImg-box">
