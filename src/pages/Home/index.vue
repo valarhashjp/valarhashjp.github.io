@@ -133,12 +133,7 @@ onMounted(() => {
       </div>
     </el-carousel-item>
   </el-carousel>
-  <main class="100% bottom-line introduce">
-    <div class="center text-H1">
-      <span class="fw500 mainText">{{ t("Valarhash") }}</span>
-      <span class="mainText">{{ t("inHashwetrust") }}</span>
-    </div>
-  </main>
+ 
   <article class="100% bottom-line about">
     <aside class="center flex">
       <div class="about-left">
